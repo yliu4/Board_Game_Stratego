@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<auditControlFile version="1.0">
+        <audit name="Java Files" auditRuleSet="/CS4233Rules">
+                <inclusionSet>
+                        <inclusion pattern="src/**/*.java"/>
+                </inclusionSet>
+                <exclusionSet>
+                        <exclusion pattern="test/**/*.java"/>
+                </exclusionSet>
+        </audit>
+</auditControlFile>

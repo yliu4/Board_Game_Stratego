@@ -1,0 +1,50 @@
+X Too few items in a configuration -> Exception
+X Too many items in a configuration -> Exception
+X Red piece on invalid row in starting configuration -> Exception
+X Red piece on invalid column in starting configuration -> Exception
+X Blue piece on invalid row in starting configuration -> Exception
+X Blue piece on invalid column in starting configuration -> Exception
+X Use invalid piece in configuration -> Exception
+X Use wrong distribution of pieces, but correct total number -> Exception
+X Move from empty location -> Exception
+X Move from location that is occupied, but with wrong piece -> Exception
+X Try to move piece not in game -> Exception
+X Red uses invalid location in move from -> Exception
+X Blue uses invalid location in move to -> Exception
+X Draw after six turns
+X Red makes valid move, status is ok
+X Red makes valid move, no strike, pieces are in correct location
+X Blue makes valid move
+X Move after game is over -> Exception
+X Two pieces placed on same location in starting configuration -> Exception
+X Move piece of wrong color -> Exception
+X Red SERGEANT takes blue flag -> Win
+X Blue LIEUTENANT takes red flag -> Win
+X Strike attacker win
+X Strike defender win
+X Strike draw
+X Make move before game is started
+X Strike your own player -> Exception
+X Move piece diagonally (not on same row and not on same column) -> Exceptin 
+X Move to a square that is not one away -> Exception
+X Restart game -> Exception
+X Attempt to move flag -> Exception
+- Blue wins on Bule's sixth move.
+	/*
+	 * The board with the initial configuration looks like this:
+	 *   |  0  |  1  |  2  |  3  |  4  |  5  |
+	 * - +-----+-----+-----+-----+-----+-----+
+	 * 5 | MAR | COL | COL | CPT | CPT | LT  |
+	 * - +-----+-----+-----+-----+-----+-----+
+	 * 4 | LT  | LT  | SGT | SGT | SGT |  F  |
+	 * - +-----+-----+-----+-----+-----+-----+
+	 * 3 |     |     |     |     |     |     |
+	 * - +-----+-----+-----+-----+-----+-----+
+	 * 2 |     |     |     |     |     |     |
+	 * - +-----+-----+-----+-----+-----+-----+
+	 * 1 |  F  | LT  | LT  | SGT | SGT | SGT |
+	 * - +-----+-----+-----+-----+-----+-----+
+	 * 0 | MAR | COL | COL | CPT | CPT | LT  |
+	 * - +-----+-----+-----+-----+-----+-----+
+	 *   |  0  |  1  |  2  |  3  |  4  |  5  |
+	 */
